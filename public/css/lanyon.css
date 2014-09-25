@@ -323,9 +323,9 @@ a.sidebar-nav-item:focus {
 
 /* Related posts */
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px dotted #eee;
 }
 .related-posts {
   padding-left: 0;
