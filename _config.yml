@@ -6,8 +6,8 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            pSeudo Thought <sup>Beta*</sup>
-tagline:          'Writing em down to help other '
+title:            pSeudo Thought <sup>beta*</sup>
+tagline:          "Writing 'em down to help other"
 description:      'A silly attempt to mirror my thought on papper from so called brain'
 url:              http://dharmeshpandav.github.io/
 baseurl:          '/'
