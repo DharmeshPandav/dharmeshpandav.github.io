@@ -21,6 +21,7 @@ paginate:         5
 
 # Custom vars
 version:          1.0.0
+comments: True
 
 github:
   repo:           https://github.com/dharmeshpandav/dharmeshpandav.github.io
