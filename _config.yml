@@ -16,7 +16,14 @@ paginate:         5
 author:
   name: 'Dharmesh Pandav'
   email: dharmesh.pandav@privatenode.in
-
+  github: dharmeshpandav
+  twitter: dharmeshpandav
+  linkedin: dharmeshpandav
+  goodreads: dharemeshpandav
+  disqus_shortname: mrpandav
+  google_analytics_id:  UA-55164623-2
+  google_analytics_url: dharmeshpandav.github.io
+  bio: MS in Information and Technology DAIICT,Gandhinagar,India
 
 # Custom vars
 version:          1.0.0
