@@ -9,9 +9,6 @@ comments:   true
   {{ content }}
 </div>
 
-{% if page.comments %}
-{% include comments.html %}
-{% endif %}
 
 <div class="related">
   <h4>Related Posts</h4>
@@ -28,3 +25,8 @@ comments:   true
     {% endfor %}
   </ul>
 </div>
+
+{% if page.comments %}
+{% include comments.html %}
+{% include google_analytics.html %}
+{% endif %}
