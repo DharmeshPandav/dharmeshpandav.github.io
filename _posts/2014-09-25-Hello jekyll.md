@@ -4,6 +4,8 @@ title : Hello Jekyll , Poole->lanyon and GitHub Pages one source that made me us
 ---
 
 <div class="message">
-  Hello World!! [Jekyll](http://jekyllrb.com) This is my first blog post using Awesome Parsing [engine](http://jekyllrb.com)
-   ,minimal blogging [framework]('http://lanyon.getpoole.com') with no bloat code,Robust , Free and open [Repository](httP://github.com) And Free Hosting [Service](http://pages.github.com) 
+  Hello world !! <Br>
+   Say hello to my first blog using Awesome Parsing Engine - <strong>jekyll</strong> 
+   ,minimal blogging framework with no bloat code <strong>lanyon</strong> ,
+   Robust-Free-Opensource Repository - <strong>Github</strong> And Free Hosting Service <strong>GitHub Pages</strong> 
 </div>
