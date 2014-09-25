@@ -22,12 +22,12 @@
       <div class="container content">
         {{ content }}
       </div>
-        {% include comments.html %}
     </div>
 
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
+    {% include comments.html %}
     <script>
       (function(document) {
         var toggle = document.querySelector('.sidebar-toggle');
