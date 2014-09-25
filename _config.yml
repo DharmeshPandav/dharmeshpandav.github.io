@@ -11,13 +11,12 @@ tagline:          'Write em down to help other '
 description:      'A silly attempt to mirror my thought on Papper from so called brain'
 url:              http://dharmeshpandav.github.io/
 baseurl:          '/'
-paginate:         2
 
 author:
   name:           'Dharmesh Pandav'
   url:            https://twitter.com/DharmeshPandav
 
-paginate:         5
+paginate:         2
 
 # Custom vars
 version:          1.0.0
