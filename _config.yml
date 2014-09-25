@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            pSeudo Thought
 tagline:          "Writing 'em down to help other"
-description:      'A silly attempt to mirror my thought on papper from so called brain'
+description:      'A silly attempt to mirror my thoughts on blog from so called brain'
 url:              http://blog.privatenode.in
 baseurl:          '/'
 paginate:         5
