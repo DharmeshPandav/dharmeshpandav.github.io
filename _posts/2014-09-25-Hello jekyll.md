@@ -1,6 +1,6 @@
 ---
 layout: post
-title : Hello Jekyll , Poole-lanyon and GitHub Pages - one source that made me use them all to-gather
+title : Hello Jekyll , Poole-lanyon and GitHub Pages
 ---
 
 <div class="message">
