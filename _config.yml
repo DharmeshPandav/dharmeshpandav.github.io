@@ -16,11 +16,11 @@ author:
   name:           'Dharmesh Pandav'
   url:            https://twitter.com/DharmeshPandav
 
-paginate:         2
+paginate:         5
 
 # Custom vars
 version:          1.0.0
-comments: True
+comments:         True
 
 github:
   repo:           https://github.com/dharmeshpandav/dharmeshpandav.github.io
