@@ -1,6 +1,7 @@
 ---
 layout: post
 title : Hello Jekyll , Poole-lanyon and GitHub Pages
+permalink: hello-jekyll
 ---
 
 <div class="message">
