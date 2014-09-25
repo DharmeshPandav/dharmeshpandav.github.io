@@ -6,10 +6,12 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            pSeudo Thought *Beta*
+title:            pSeudo Thought
 tagline:          'Write em down to help other '
 description:      'A silly attempt to mirror my thought on Papper from so called brain'
-url:              http://privatenode.in
+url:              http://dharmeshpandav.github.io/
+baseurl:          '/'
+paginate:         5
 
 author:
   name:           'Dharmesh Pandav'
