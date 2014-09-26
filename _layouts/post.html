@@ -10,7 +10,7 @@ comments:   true
             <i class="fa fa-calendar"></i>
             {{ page.date | date_to_string }}
             <small> Tagged
-               {{ page.tags | tag_links}}
+               {{ page.tags | "."}}
             </small>
         </span>
     </span>
