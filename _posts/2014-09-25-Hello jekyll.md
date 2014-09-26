@@ -1,6 +1,11 @@
 ---
 layout: post
 title : Hello Jekyll , Poole-lanyon and GitHub Pages
+tags:
+- Jekyll
+- lanyon
+- poole
+- Github Pages
 permalink: hello-jekyll
 ---
 

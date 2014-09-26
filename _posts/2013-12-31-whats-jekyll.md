@@ -1,6 +1,10 @@
 ---
 layout: post
 title: What's Jekyll?
+tags:
+- Jekyll
+- lanyon
+- poole
 permalink: what-is-jekyll
 ---
 

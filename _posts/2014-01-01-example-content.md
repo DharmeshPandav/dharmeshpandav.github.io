@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Example content
+tags:
+- Jekyll
+- lanyon
+- poole
 permalink: example-content
 ---
 

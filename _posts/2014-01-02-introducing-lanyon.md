@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Introducing Lanyon
+tags:
+- Jekyll
+- lanyon
+- poole
+- Github Pages
 permalink: lanyon-introduction
 ---
 
