@@ -9,8 +9,10 @@ comments:   true
         <span>
             <i class="fa fa-calendar"></i>
             {{ page.date | date_to_string }}
-            Tagged
-             = {{ page.tags }}
+            <small> Tagged
+             = {{ page.tags + "." }}Tagged
+            </small>
+
         </span>
     </span>
     {{ content }}
