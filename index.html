@@ -16,6 +16,8 @@ title: Home
         <span>
             <i class="fa fa-calendar"></i>
         {{ post.date | date_to_string }}
+            <strong>Tagged</strong>
+             <em> {{ page.tags | join: ", "}}</em>
             </span>
     </span>
 
