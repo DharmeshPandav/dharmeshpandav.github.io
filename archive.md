@@ -3,8 +3,9 @@ layout: default
 title: Archive
 ---
 
+<div class="archive">
 {% for post in site.posts %}
-<div>
+
   {% assign post_month_year = post.date | date: "%B %Y" %}
   {% assign newer_post_month_year = post.next.date | date: "%B %Y" %}
   {% if post_month_year != newer_post_month_year %}
@@ -12,5 +13,7 @@ title: Archive
   {% endif %}
   
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
-</div>
+
 {% endfor %}
+
+</div>
