@@ -5,8 +5,7 @@ title: Home
 
 <div class="posts">
     {% for post in site.posts %}
-    {{ post.tags }}
-    {% if {{ post.tags }} != "poole" %}
+
 
     <div class="post">
         <h1 class="post-title">
@@ -25,7 +24,6 @@ title: Home
     </span>
 
     </div>
-    {% endif %}
     {% endfor %}
 </div>
 
