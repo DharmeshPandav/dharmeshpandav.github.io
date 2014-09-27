@@ -12,6 +12,7 @@ title: Archive
   {% if post_month_year != newer_post_month_year % or newer_post_month_year == null}
     <h3 class="section-header-archive">
       {{ post_month_year }}
+      {{ newer_post_month_year }}
     </h3>
   {% endif %}
   
