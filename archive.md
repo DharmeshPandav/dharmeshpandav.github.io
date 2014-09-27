@@ -13,5 +13,5 @@ title: Archive
 </strong></div>
   {% endif %}
 
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+  * <div>{{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})</div>
 {% endfor %}
