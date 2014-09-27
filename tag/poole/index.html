@@ -3,12 +3,6 @@ layout: default
 title: Tags
 ---
 
-<ul>
-    {% for tag in site.tags %}
-    <li><a href="/tag/{{ tag[0] }}">{{ tag[0] }}</a></li>
-    {% endfor %}
-</ul>
-
 <div class="posts">
     {% for post in paginator.posts %}
     <div class="post">
@@ -27,7 +21,12 @@ title: Tags
             </span>
     </span>
 
-        {{ post.content }}
     </div>
     {% endfor %}
 </div>
+
+<ul>
+    {% for tag in site.tags %}
+    <li><a href="/tag/{{ tag[0] }}">{{ tag[0] }}</a></li>
+    {% endfor %}
+</ul>
