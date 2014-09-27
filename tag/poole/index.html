@@ -10,10 +10,11 @@ description:    poole
     {% endfor %}
 </ul>
 
+{{ post.description }}
 
 <div class="posts">
     {% for post in paginator.posts %}
-    {% if {{ post.description }} == poole %}
+    {% if {{ post.description }} == "poole" %}
     <div class="post">
         <h1 class="post-title">
             <a href="{{ post.url }}">
