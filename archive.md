@@ -21,6 +21,7 @@ title: Archive
     {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
    {% endcomment %}
    
+    {{ post.date | date_to_string }} &raquo; 
     <a href="{{ post.url }}">
        {{ post.title }}
     </a>
