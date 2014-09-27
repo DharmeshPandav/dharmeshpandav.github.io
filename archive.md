@@ -16,7 +16,11 @@ title: Archive
   {% endif %}
   
   <li>
+   
+    {% comment %}
     {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+   {% endcomment %}
+   
     <a href="{{ post.url }}">
        {{ post.title }}
     </a>
