@@ -5,6 +5,7 @@ title: Home
 
 <div class="posts">
     {% for post in site.posts %}
+    {{ post.tags }}
     {% if {{ post.tags }} != "poole"}
 
     <div class="post">
