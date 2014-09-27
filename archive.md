@@ -11,6 +11,6 @@ title: Archive
   {% if post_month_year != newer_post_month_year %}
     {{ post_month_year }}      
   {% endif %}
-</h3>
+</div>
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
 {% endfor %}
