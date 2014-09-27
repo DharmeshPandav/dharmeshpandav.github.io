@@ -3,6 +3,8 @@ layout: page
 title: Archive
 ---
 
+<ul class="related-posts">
+
 {% for post in site.posts %}
 
   {% assign post_month_year = post.date | date: "%B %Y" %}
@@ -12,5 +14,10 @@ title: Archive
     {{ post_month_year }}
 </strong></p>
   {% endif %}
-   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }}) 
+  
+  <li>
+    {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+  </li>   
 {% endfor %}
+
+</ul>
