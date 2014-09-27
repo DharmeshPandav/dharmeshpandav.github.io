@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
 title: Archive
 ---
-
 
 {% for post in site.posts %}
 <div><strong>
