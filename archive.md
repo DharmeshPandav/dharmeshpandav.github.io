@@ -8,9 +8,9 @@ title: Archive
   {% assign post_month_year = post.date | date: "%B %Y" %}
   {% assign newer_post_month_year = post.next.date | date: "%B %Y" %}
   {% if post_month_year != newer_post_month_year %}
-<div><strong>
+<p><strong>
     {{ post_month_year }}
-</strong></div>
+</strong></p>
   {% endif %}
    * {{ post.date | date_to_string }} [ {{ post.title }} ]({{ post.url }}) 
 {% endfor %}
