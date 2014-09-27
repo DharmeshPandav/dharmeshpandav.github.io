@@ -12,5 +12,5 @@ title: Archive
     {{ post_month_year }}
 </strong></p>
   {% endif %}
-   * {{ post.date | date_to_string }} [ {{ post.title }} ]({{ post.url }}) 
+   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }}) 
 {% endfor %}
