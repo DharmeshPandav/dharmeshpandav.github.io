@@ -10,9 +10,9 @@ title: Archive
   {% assign post_month_year = post.date | date: "%B %Y" %}
   {% assign newer_post_month_year = post.next.date | date: "%B %Y" %}
   {% if post_month_year != newer_post_month_year %}
-<p><strong>
+<div class="archive-title"><strong>
     {{ post_month_year }}
-</strong></p>
+</strong></div>
   {% endif %}
   
   <li>
