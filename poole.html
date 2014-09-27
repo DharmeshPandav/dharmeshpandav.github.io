@@ -1,0 +1,32 @@
+---
+layout: default
+title: Tags
+---
+
+<div class="posts">
+    {% for post in site.paginator.posts %}
+    <div class="post">
+        <h1 class="post-title">
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </h1>
+
+    <span class="post-date">
+        <span>
+            <i class="fa fa-calendar"></i>
+        {{ post.date | date_to_string }}
+            <strong>Tagged</strong>
+             <em> {{ post.tags | join: ", "}}</em>
+            </span>
+    </span>
+
+    </div>
+    {% endfor %}
+</div>
+
+<ul>
+    {% for tag in site.tags %}
+    <li><a href="/tag/{{ tag[0] }}">{{ tag[0] }}</a></li>
+    {% endfor %}
+</ul>
