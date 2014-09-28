@@ -51,6 +51,15 @@
     margin-right: 3px;
 }
 
+.tag1-icon-prefix {
+    background:url(/assets/Tag_1_38x38.png) left top;
+    width:38px;
+    height:38px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
 .tag-list{
     margin-top: .4rem;
 }
