@@ -3,11 +3,7 @@ layout: default
 title: poole
 ---
 
-
     {% assign flag = false %}
-
-    {{ flag }}
-
 
     <ul class="related-posts">
 
@@ -18,8 +14,6 @@ title: poole
 				{% assign flag = true %}
 			{% endif %}
 		{% endfor %}
-
-		{{ flag }}
 
         {% if flag %}
         {% assign post_month_year = post.date | date: "%B %Y" %}
