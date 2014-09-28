@@ -8,17 +8,19 @@ title: poole
 
     {{ flag }}
 
-    {% for tag in post.tags %}
-        {% if tag == page.title %}
-            {% assign flag = true %}
-        {% endif %}
-    {% endfor %}
-
-    {{ flag }}
 
     <ul class="related-posts">
 
         {% for post in site.posts %}
+
+		{% for tag in post.tags %}
+			{% if tag == page.title %}
+				{% assign flag = true %}
+			{% endif %}
+		{% endfor %}
+
+		{{ flag }}
+
         {% if flag %}
         {% assign post_month_year = post.date | date: "%B %Y" %}
         {% assign newer_post_month_year = post.next.date | date: "%B %Y" %}
