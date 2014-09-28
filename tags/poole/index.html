@@ -9,7 +9,7 @@ title: poole
     {{ flag }}
 
     {% for tag in post.tags %}
-        {% if tag == {{ page.title }} %}
+        {% if tag == page.title %}
             {% assign flag = true %}
         {% endif %}
     {% endfor %}
