@@ -43,11 +43,15 @@
 }
 
 .tag-icon-prefix {
-    background:url(/assets/tag20x20.png) left top;
-    width:20px;
-    height:20px;
+    background:url(/assets/tag28x28.png) left top;
+    width:28px;
+    height:28px;
     display: block;
     float: left;
+}
+
+.tag-list{
+    margin-top: 1rem;
 }
 
 
