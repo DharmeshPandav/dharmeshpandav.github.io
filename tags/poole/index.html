@@ -8,7 +8,8 @@ title: poole
     <ul class="related-posts">
 
         {% for post in site.posts %}
-
+		
+		{% assign flag = false %}
 		{% for tag in post.tags %}
 			{% if tag == page.title %}
 				{% assign flag = true %}
