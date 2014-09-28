@@ -41,3 +41,15 @@
 .archive-title {
     margin: 1rem 0;
 }
+
+.tag-icon-prefix {
+    background:url(/assets/tag.png) left top;
+    width:inherit;
+    height:inherit;
+    display: block;
+    float: left;
+}
+
+.firm {
+    float: left;
+}
