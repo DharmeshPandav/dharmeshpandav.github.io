@@ -17,8 +17,10 @@ title: Home
             <i class="fa fa-calendar"></i>
         {{ post.date | date_to_string }}
             <strong>Tagged</strong>
-             <em> {{ post.tags | join: ", "}}</em>
-            </span>
+			{% for tag in page.tags %}
+				<em> <a href="{{ site.url }}/tags/{{tag}}">{{ tag }}</a> </em>
+			{% endfor %}
+        </span>
     </span>
 
     {{ post.content }}
