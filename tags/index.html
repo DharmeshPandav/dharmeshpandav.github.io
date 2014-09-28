@@ -4,12 +4,10 @@ title: Tags
 ---
 
 
-<ul>
     {% for tag in site.tags %}
-    <li>
+    <div>
         <a class="firm" href="/tags/{{ tag[0] }}">{{ tag[0] }}</a>
         <span class="tag-icon-prefix"></span>
-    </li>
+    </div>
     {% endfor %}
-</ul>
 
