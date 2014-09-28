@@ -44,8 +44,8 @@
 
 .tag-icon-prefix {
     background:url(/assets/tag.png) left top;
-    width:inherit;
-    height:inherit;
+    width:20px;
+    height:20px;
     display: block;
     float: left;
 }
