@@ -32,4 +32,15 @@ Public Class myclass implements runnable {
 {% endhighlight %}
 
 
+{% highlight ruby linenos %}
 
+Public Class myclass implements runnable {
+    Public static void main(args[]){
+        system.out.println("Hello World");
+    }
+}
+   
+{% endhighlight %}
+
+
+{% gist DharmeshPandav/6302910d68176935fed4 taglist %}
