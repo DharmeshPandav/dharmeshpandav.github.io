@@ -14,3 +14,19 @@ excerpt: this is my Third post using Jekyll , poole on Github pages
    Robust-Free-Opensource Repository - <strong>Github</strong> And Free Hosting Service <strong>GitHub Pages</strong> 
 </div>
 
+{% highlight sql %}
+    select t.* from mytable where  t.name = "my" AND t.id = 1
+    
+    Insert into mytable (A,B,C) VALUES  ( 1, 2,3)
+{% endhighlight %}
+
+
+{% highlight java linenos %}
+
+Public Class myclass implements runnable {
+    Public static void main(args[]){
+        system.out.println("Hello World");
+    }
+}
+   
+{% endhighlight %}
