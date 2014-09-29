@@ -39,7 +39,7 @@ Public Class myclass implements runnable {
 
 
 
-{% highlight redcarpet %}
+{% highlight md %}
 {% for tag in site.tags %}
     <div class="tag-list">
         <a class="firm" href="/tags/{{ tag[0] }}">{{ tag[0] }}</a>
