@@ -38,8 +38,9 @@ title: poole
 
  <div class="archive-title">Other Tags</div>
 
-<ul>
-    {% for tag in site.tags %}
-    <li><a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a></li>
-    {% endfor %}
-</ul>
+{% for tag in site.tags %}
+<div class="tag-list">
+    <a class="firm" href="/tags/{{ tag[0] }}">{{ tag[0] }}</a>
+    <span class="tag-icon-prefix"></span>
+</div>
+{% endfor %}
