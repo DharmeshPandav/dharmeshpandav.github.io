@@ -24,7 +24,12 @@ comments:   true
             <i class="fa fa-calendar"></i>
             {{ page.date | date_to_string }}
             <i class="fa fa-tags fa-rotate-90"></i>
+                    {% assign flag = flase %}
 					{% for tag in page.tags %}
+                        {% if flag %}
+                            <en>|</en>
+                        {% endif %}
+                        {% assign flag = true %}
 						<em> <a href="{{ site.url }}/tags/{{tag}}">{{ tag }}</a> </em>
 					{% endfor %}
         </span>
