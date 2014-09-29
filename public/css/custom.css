@@ -74,4 +74,9 @@
     margin-top: .4rem;
 }
 
+.post-bottom-padding{
+    margin-bottom: 0rem !important;
+    padding-bottom: 4rem !important;
+    border-bottom: 3px dotted #f5f5f5;
+}
 
