@@ -30,3 +30,12 @@ Public Class myclass implements runnable {
 }
    
 {% endhighlight %}
+
+
+<div> this is the gist from Github to list all the Tags used in the Static site ..this will be usefull in created Tag cloud and easy navigation </div>
+
+{% gist DharmeshPandav/6302910d68176935fed4 %}
+
+<div> one more try at GIST </div>
+
+{% gist DharmeshPandav/6302910d68176935fed4 List-all-tags.markdown %}
