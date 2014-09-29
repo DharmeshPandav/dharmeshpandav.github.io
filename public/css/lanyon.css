@@ -300,6 +300,7 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 4em;
+    border-bottom: 5px dotted blue;
 }
 
 /* Blog post or page title */
