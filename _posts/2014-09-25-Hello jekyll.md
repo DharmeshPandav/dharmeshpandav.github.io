@@ -7,6 +7,7 @@ tags:
 - poole
 - Github Pages
 permalink: hello-jekyll
+excerpt: this is my first post using Jekyll , poole on Github pages
 ---
 
 <div class="message">
@@ -16,5 +17,4 @@ permalink: hello-jekyll
    Robust-Free-Opensource Repository - <strong>Github</strong> And Free Hosting Service <strong>GitHub Pages</strong> 
 </div>
 
- <!--more-->
 
