@@ -27,8 +27,12 @@ title: Home
 			{% endfor %}
         </span>
     </span>
-
+    {% comment %}
     {{ post.content }}
+    {% endcomment %}
+
+    {{ post.excerpt }}
+
   </div>
   {% endfor %}
 </div>
