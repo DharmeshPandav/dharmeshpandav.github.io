@@ -56,7 +56,9 @@
     height: 28px;
     margin-right: 3px;
     margin-left: 3px;
-    display: inline-block;
+    display: block;
+    float: left;
+
 
 }
 
