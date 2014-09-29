@@ -12,6 +12,7 @@ description:      'A silly attempt to mirror my thoughts on blog from so called 
 url:              http://blog.privatenode.in
 baseurl:          '/'
 paginate:         5
+excerpt_separator: <!--more-->
 
 author:
   name: 'Dharmesh Pandav'
