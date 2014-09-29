@@ -23,7 +23,10 @@ comments:   true
         <span>
             <i class="fa fa-calendar"></i>
             {{ page.date | date_to_string }}
-            <strong>Tagged</strong>
+            <div>
+                <span class="tag-icon-prefix"></span>
+                <strong>Tagged</strong>
+            </div>
 					{% for tag in page.tags %}
 						<em> <a href="{{ site.url }}/tags/{{tag}}">{{ tag }}</a> </em>
 					{% endfor %}
