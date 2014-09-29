@@ -36,9 +36,6 @@ Public Class myclass implements runnable {
 
 {% gist DharmeshPandav/6302910d68176935fed4 %}
 
-<div> one more try at GIST </div>
-
-{% gist DharmeshPandav/TagList %}
 
 
 {% highlight ruby %}
