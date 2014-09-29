@@ -48,6 +48,8 @@
     font-family: cursive;
     font-style: italic;
     font-weight: bold;
+    text-underline: 1px;
+    text-underline-style: dotted;
 }
 
 .tag-icon-prefix {
@@ -57,8 +59,7 @@
     display: block;
     float: left;
     margin-right: 3px;
-    text-underline: 1px;
-    text-underline-style: dotted;
+
 }
 
 .tag1-icon-prefix {
