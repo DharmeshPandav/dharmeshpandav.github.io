@@ -57,6 +57,8 @@
     display: block;
     float: left;
     margin-right: 3px;
+    text-underline: 1px;
+    text-underline-style: dotted;
 }
 
 .tag1-icon-prefix {
