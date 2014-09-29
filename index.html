@@ -20,8 +20,8 @@ title: Home
              <i class="fa fa-tags fa-rotate-90"></i>
 			{% for tag in post.tags %}
 				{% if flag %}
-                    <strong>#</strong>
-                {% endif}
+                    <en>|</en>
+                {% endif %}
                 {% assign flag = true %}
                 <em> <a href="{{ site.url }}/tags/{{tag}}">{{ tag }}</a> </em>
 			{% endfor %}
