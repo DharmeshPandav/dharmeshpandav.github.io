@@ -16,7 +16,7 @@ title: Home
         <span>
             <i class="fa fa-calendar"></i>
         {{ post.date | date_to_string }}
-            <strong>Tagged</strong>
+             <i class="fa fa-tags fa-rotate-90"></i>
 			{% for tag in post.tags %}
 				<em> <a href="{{ site.url }}/tags/{{tag}}">{{ tag }}</a> </em>
 			{% endfor %}
