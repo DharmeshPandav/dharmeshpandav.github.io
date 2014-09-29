@@ -42,6 +42,13 @@
     margin: 1rem 0;
 }
 
+.inline-title {
+    margin: 2rem 0;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+}
+
 .tag-icon-prefix {
     background:url(/assets/tag28x28.png) left top;
     width:28px;
