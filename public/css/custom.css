@@ -50,6 +50,14 @@
     font-weight: bold;
 }
 
+.inline-title-post {
+    margin-top: 1rem
+    margin-bottom: 0.5rem;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+}
+
 .tag-icon-prefix {
     background:url(/assets/tag28x28.png) left top;
     width:28px;
