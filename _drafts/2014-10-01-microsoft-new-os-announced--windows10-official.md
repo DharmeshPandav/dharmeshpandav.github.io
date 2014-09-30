@@ -10,4 +10,9 @@ excerpt: Today Microsoft has launched their latest Windows operating system - Wi
 
 Today microsoft has launched their next Operating system , <em>Windows10<em>
 
+<strong> Watch Joe Belfiore , Vice President , Windows ..Announcing new Microsoft Windows Operating system after Windows 8 </strong>
+ 
+<iframe width="560" height="315" src="//www.youtube.com/embed/84NI5fjTfpQ" frameborder="0" allowfullscreen></iframe>
+
+
 ---work in progress..being edited
