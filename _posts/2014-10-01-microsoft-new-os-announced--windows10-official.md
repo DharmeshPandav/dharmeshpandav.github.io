@@ -1,6 +1,6 @@
 ---
 layout: post
-title : Today Stepping into new world - Windows10 
+title : Windows10 announced, a new and improve Windows 8 successor(!)
 tags:
 - microsoft
 - windows10
