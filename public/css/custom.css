@@ -104,6 +104,12 @@
 
 
 .frame-video{
+    width: 90%;
+    height:300px;
+    align-items: center;
+}
+
+.frame-video-small{
     width: 60%;
     height:315px;
 }
