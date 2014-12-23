@@ -118,5 +118,5 @@
     position: fixed;
     right: 70px;
     top:20px;
-    color: #75b5aa;
+    color: #75b5aa !important;
 }
