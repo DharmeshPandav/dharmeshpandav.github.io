@@ -113,3 +113,9 @@
     width: 60%;
     height:315px;
 }
+
+.absolute-right{
+    position: absolute;
+    right: 50px;
+    top:10px;
+}
