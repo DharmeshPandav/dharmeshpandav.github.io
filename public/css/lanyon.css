@@ -127,10 +127,9 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 
-    .absolute-right-small {
-        display: compact;
+  .absolute-right-small {
+        display: inline;
     }
-
 
   .absolute-right{
       display: none;
