@@ -6,7 +6,7 @@ function exec() {
     $('.letitbegin').append(canvas);
     canvas.width = $('.letitbegin').width() - 5;
     canvas.height = $('.letitbegin').height() - 5;
-    setInterval(launch, 80);
+    setInterval(launch, 250);
     setInterval(loop, 1000 / 50);
 }
 $(document).ready(function () {
