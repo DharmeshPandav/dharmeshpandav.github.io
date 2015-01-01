@@ -6,8 +6,8 @@ function exec() {
     $('.letitbegin').append(canvas);
     canvas.width = $('.letitbegin').width() - 5;
     canvas.height = $('.letitbegin').height() - 5;
-    setInterval(launch, 800);
-    setInterval(loop, 1000 / 50);
+    setInterval(launch, 80);
+    setInterval(loop, 100 / 50);
 }
 $(document).ready(function () {
     var ndlaIesd = new Date();
