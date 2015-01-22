@@ -11,6 +11,6 @@ permalink: Simple-Css-Unit-Converstion-PxtoEm-EmtoPx
 excerpt: This is a dead simple but very useful unit converstion tool that i have created after looking at internet for the conversion of css units from px to em and vice versa ,for responsive mobile UI project...with custom variable to specify that size of 1 em ..standard is 1 em = 16px..but you can always change it as per the devce you are wriing css for..i.e 15px or 14 px
 ---
 
-This is a dead simple but very useful unit converstion tool that i have created after looking at internet for the conversion of css units from px to em and vice versa ,for responsive mobile UI project.
+This is a <em>dead</em> <strong>simple</strong> very useful unit converstion tool that i have created after looking at internet for the conversion of css units from px to em and vice versa ,for responsive mobile UI project.
 
 This tools comes with the option to specify the size of 1 em ..standard is 1 em = 16px..but you can always change it as per the devce you are wriing css for..i.e 15px or 14 px
