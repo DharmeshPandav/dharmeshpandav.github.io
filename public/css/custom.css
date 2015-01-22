@@ -173,6 +173,7 @@
     font-size: 12px;
     width: 100%;
     resize: none;
-    height: 350px;
+    height: 100%;
     color: #bfbfbf;
+    position: absolute;
 }
