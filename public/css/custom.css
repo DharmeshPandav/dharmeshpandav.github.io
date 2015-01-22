@@ -208,3 +208,7 @@ float: left;
 font-family: 'Monaco', sans-serif;
 max-height: 42px;
 }
+
+.segment .title{
+    text-align: center;
+}
