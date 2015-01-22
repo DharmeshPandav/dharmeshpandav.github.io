@@ -113,3 +113,24 @@
     width: 60%;
     height:315px;
 }
+
+.absolute-right{
+    position: fixed;
+    right: 40px;
+    top:20px;
+    color: #75b5aa !important;
+}
+
+.absolute-right-small{
+    position: fixed;
+    right: 0px;
+    top:20px;
+    color: #75b5aa !important;
+    padding-right: 10px;
+}
+
+.absolute-right-small a{
+     color:#2DCCA2;
+}
+
+.letitbegin {position:fixed;z-index:-9999;top:0;left:0;width:100%;height:100%;margin:0;padding:0;}
