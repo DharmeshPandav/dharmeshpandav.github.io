@@ -1,0 +1,89 @@
+---
+layout: default
+comments:   true
+---
+
+<div class="post">
+    <h1 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <span class="post-date">
+        <span>
+            <i class="fa fa-calendar"></i>
+            {{ page.date | date_to_string }}
+            <i class="fa fa-tags fa-rotate-90"></i>
+                    {% assign flag = flase %}
+					{% for tag in page.tags %}
+                        {% if flag %}
+                            <en>|</en>
+                        {% endif %}
+                        {% assign flag = true %}
+						<em> <a href="{{ site.url }}/tags/{{tag}}">{{ tag }}</a> </em>
+					{% endfor %}
+        </span>
+    </span>
+    {{ content }}
+
+    <textarea id="px" class="px-area" tabindex="2" spellcheck="false"></textarea>
+      <br/><br/>
+    <textarea id="em" class="em-area" tabindex="2" spellcheck="false"></textarea>
+
+    <input type="text" id="parent-font-size" class="base-size" value="16" autocomplete="off">
+
+    <button id="btn" class="code-button" onclick="doConvert();">Convert</button>
+
+</div>
+
+<div class="related">
+  <h3 class="inline-title-post">Related Posts</h3>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+ <script>
+
+   function doConvert() {
+      var px = document.getElementById("px"),
+          em = document.getElementById("em");
+      if (px.value) {
+          pxToEm()
+      } else if (em.value) {
+          emToPx()
+      }
+  }
+
+  function pxToEm() {
+      var px = document.getElementById("px"),
+          em = document.getElementById("em"),
+          parent = document.getElementById("parent-font-size");
+      var pxToEmAnswer = px.value.replace(/(\d+\.?)px/ig, function (match, size) {
+          return (1 / parent.value * size).toFixed(3) + "em"
+      });
+      em.value = pxToEmAnswer
+  }
+
+  function emToPx() {
+      var px = document.getElementById("px"),
+          em = document.getElementById("em"),
+          parent = document.getElementById("parent-font-size");
+      var emToPxAnswer = em.value.replace(/(\d+\.?)em/ig, function (match, size) {
+          return (size * parent.value).toFixed(0) + "px"
+      });
+      px.value = emToPxAnswer
+  }
+
+   $(document).keyup(function(e){if(e.keyCode==13){doConvert();}});
+
+ </script>
+
+{% if page.comments %}
+{% include comments.html %}
+{% endif %}
