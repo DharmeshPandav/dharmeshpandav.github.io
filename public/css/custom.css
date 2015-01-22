@@ -156,6 +156,11 @@
     float: left;
 }
 
+.pxtoemwrapper .segment{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .px-area, .em-area {
     background-color: #efefef;
     -webkit-border-bottom-right-radius: 3px;
