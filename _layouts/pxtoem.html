@@ -22,13 +22,19 @@ comments:   true
     </span>
     {{ content }}
 
-    <textarea id="px" class="px-area" tabindex="2" spellcheck="false"></textarea>
-      <br/><br/>
-    <textarea id="em" class="em-area" tabindex="2" spellcheck="false"></textarea>
+    <div class="pxtoemwrapper">
+      <div class="segment">
+        <textarea id="px" class="px-area" tabindex="2" spellcheck="false"></textarea>
+      </div>
+      <div class="segment">
+        <textarea id="em" class="em-area" tabindex="2" spellcheck="false"></textarea>
+      </div>
+    </div>
 
-    <input type="text" id="parent-font-size" class="base-size" value="16" autocomplete="off">
-
-    <button id="btn" class="code-button" onclick="doConvert();">Convert</button>
+    <div>
+      <input type="text" id="parent-font-size" class="base-size" value="16" autocomplete="off">
+      <button id="btn" class="code-button" onclick="doConvert();">Convert</button>
+    </div>
 
 </div>
 

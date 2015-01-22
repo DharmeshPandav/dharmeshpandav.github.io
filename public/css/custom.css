@@ -130,7 +130,28 @@
 }
 
 .absolute-right-small a{
-     color:#2DCCA2;
+    color:#2DCCA2;
 }
 
 .letitbegin {position:fixed;z-index:-9999;top:0;left:0;width:100%;height:100%;margin:0;padding:0;}
+
+.pxtoemwrapper {
+    width: 95%;
+    padding: 0.5em;
+    margin: 1em auto 1em auto;
+    background: #444;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 0.625em;
+    overflow: hidden;
+}
+
+.wrapper segment{
+    width: 46%;
+    padding-bottom: 44%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 2%
+    color: #FFF;
+    position: relative;
+    float: left;
+}
