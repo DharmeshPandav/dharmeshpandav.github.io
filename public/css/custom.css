@@ -159,6 +159,8 @@
 .segment2{
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;
+width: 20em;
 }
 
 .px-area, .em-area {
@@ -181,7 +183,7 @@
 .code-button {
 background-color: #92c46d;
 text-transform: uppercase;
-padding: 12px 19px;
+padding: 12px 19px 10px 10px;
 border-radius: 3px;
 cursor: pointer;
 font-size: 13px;
@@ -191,9 +193,7 @@ color: #fff;
 -moz-box-shadow: 0 2px 0 #63973c;
 box-shadow: 0 2px 0 #63973c;
 font-family: 'Karla', sans-serif;
-position: absolute;
-left: 235px;
-top: 55px;
+margin-left: 20px
 }
 
 .base-size {
