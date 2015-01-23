@@ -232,4 +232,34 @@ max-height: 42px;
         color: #bfbfbf;
         position: absolute;
     }
+    .code-button {
+        background-color: #92c46d;
+        text-transform: uppercase;
+        padding: 12px 19px 10px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 13px;
+        min-height: 35px;
+        width:26%;
+        color: #fff;
+        -webkit-box-shadow: 0 2px 0 #63973c;
+        -moz-box-shadow: 0 2px 0 #63973c;
+        box-shadow: 0 2px 0 #63973c;
+        font-family: 'Karla', sans-serif;
+        margin-left: 10px
+    }
+
+    .base-size {
+        background-color: #efefef;
+        padding: 13px 19px 12px 19px;
+        border-radius: 3px;
+        min-height: 42px;
+        color: #bfbfbf;
+        font-size: 15px;
+        clear: both;
+        float: left;
+        width:30%;
+        font-family: 'Monaco', sans-serif;
+        max-height: 42px;
+    }
 }
