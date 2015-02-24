@@ -18,7 +18,7 @@ excerpt: This article contains the detailed walk-through of how to use TOR Relay
 <strong> So without any due let's dive in </strong>
 
 ### **First Install TOR(port 9050) relay and Polipo(port 8123) proxy** ..
-will explain the technical part letter in this article for now read the statement as english only !
+will explain the technical part later in this article, for now read the statement as english only !
 
 **Reason:** Scrapy does not support SOCK Proxy(only http proxy) but in order to use TOR exit , one must transfer traffic via SOCK Proxy.. As a Solution ,Install Polipo proxy (default 8123 port)..which listens as a HTTP Proxy and can forward/receive traffic to/from SOCKS proxy ( for us  to-and-from TOR relay)
 
@@ -26,11 +26,11 @@ will explain the technical part letter in this article for now read the statemen
 
 ### **Installing TOR and POLIPO:**
 
-### FOR TOR:
+### ***FOR TOR:***
 
 use this link for installation of TOR for your distro : https://www.torproject.org/docs/documentation.html.en
 
-> <strong>For Ubuntu <strong> : DO NOT DOWNLOAD TOR Relay from Ubuntu repository ...Include Specific TOR project PPA instead
+> for Ubuntu : DO NOT DOWNLOAD TOR Relay from Ubuntu repository ...Include Specific TOR project PPA instead
 
 Use this page for ppa of your project: https://www.torproject.org/docs/debian.html.en#ubuntu
 
