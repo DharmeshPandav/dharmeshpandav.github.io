@@ -34,7 +34,7 @@ use this link for installation of TOR for your distro : https://www.torproject.o
 
 Use this page for ppa of your project: https://www.torproject.org/docs/debian.html.en#ubuntu
 
-*example (UTOPIC UNICORN)*
+example (UTOPIC UNICORN)
 
 {% highlight bash %}
 
