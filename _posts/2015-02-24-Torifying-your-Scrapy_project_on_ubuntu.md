@@ -26,7 +26,7 @@ will explain the technical part later in this article, for now read the statemen
 
 ### **Installing TOR and POLIPO:**
 
-### ***FOR TOR:***
+### **FOR TOR:**
 
 use this link for installation of TOR for your distro : https://www.torproject.org/docs/documentation.html.en
 
@@ -48,7 +48,7 @@ deb-src http://deb.torproject.org/torproject.org utopic main
 gpg --keyserver keys.gnupg.net --recv 886DDD89
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
 
-#post that update your system and install tor using
+#post that, update your system and install tor using
 
 $ apt-get update
 $ apt-get install tor deb.torproject.org-keyring
@@ -56,7 +56,7 @@ $ apt-get install tor deb.torproject.org-keyring
 {% endhighlight %}
 
 
-### ***FOR POLIPO:***
+### **FOR POLIPO:**
 
 {% highlight bash %}
 #install from default ubuntu base repository
