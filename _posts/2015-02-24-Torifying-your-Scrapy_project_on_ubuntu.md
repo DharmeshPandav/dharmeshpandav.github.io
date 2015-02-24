@@ -103,7 +103,7 @@ DOWNLOADER_MIDDLEWARES = {
 }
 ```
 
-* ***Create a middlewares.py file in your project root directory and following line of code***
+* ***Create a middlewares.py file in your project root directory and add following line of code***
 
 ```bash
 import random
@@ -154,7 +154,7 @@ view(response) - to view downloaded response body in browser
 ```
 
 <div class="message">
-  Author of this article does not encourage IP infringement in any-form whatsoever...and Author is not responsible for any consequence of using methods ,mentioned above
+  Author of this article does not encourage IP infringement in any-form whatsoever...and Author is not responsible for any consequence of using methods ,mentioned above.
   this article is only for those who want to implement http middleware feature of Scrapy Framework..
   Respect others IP , scrap only if it is allowed to..respect ROBOT.txt rules strictly...with that being said...
   Happy Scrapping :D
