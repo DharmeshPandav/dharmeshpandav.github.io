@@ -36,6 +36,25 @@ Use this page for ppa of your project: https://www.torproject.org/docs/debian.ht
 
 example (UTOPIC UNICORN)
 
+{% highlight bash %}
+
+add this two line in package list file : /etc/apt/sources.list
+
+deb http://deb.torproject.org/torproject.org utopic main
+deb-src http://deb.torproject.org/torproject.org utopic main
+
+#Then run
+
+gpg --keyserver keys.gnupg.net --recv 886DDD89
+gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
+
+#post that, update your system and install tor using
+
+$ apt-get update
+$ apt-get install tor deb.torproject.org-keyring
+
+{% endhighlight %}
+
 ### **FOR POLIPO:**
 
 {% highlight bash %}
