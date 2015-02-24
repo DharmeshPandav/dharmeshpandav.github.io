@@ -36,7 +36,7 @@ Use this page for ppa of your project: https://www.torproject.org/docs/debian.ht
 
 *example (UTOPIC UNICORN)*
 
-{% highlight js %}
+{% highlight bash %}
 
 add this two line in package list file : /etc/apt/sources.list
 
@@ -54,7 +54,7 @@ $ apt-get update
 $ apt-get install tor deb.torproject.org-keyring
 
 
-{% endhighlight js %}
+{% endhighlight bash %}
 
 
 ### FOR POLIPO:
