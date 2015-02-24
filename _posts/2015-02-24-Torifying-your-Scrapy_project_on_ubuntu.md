@@ -102,7 +102,9 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
 }
 ```
+
 * ***Create a middlewares.py file in your project root directory and following line of code***
+
 ```bash
 import random
 from scrapy.conf import settings
