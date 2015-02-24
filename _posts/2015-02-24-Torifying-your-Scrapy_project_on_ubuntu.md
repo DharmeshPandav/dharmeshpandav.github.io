@@ -28,11 +28,11 @@ will explain the technical part later in this article, for now read the statemen
 
 ### **FOR TOR:**
 
-use this link for installation of TOR for your distro : https://www.torproject.org/docs/documentation.html.en
+use this link for installation of TOR for your distro : [TOR Project](https://www.torproject.org/docs/documentation.html.en)
 
-> for Ubuntu : DO NOT DOWNLOAD TOR Relay from Ubuntu repository ...Include Specific TOR project PPA instead
+> for ubuntu : DO NOT DOWNLOAD TOR Relay from Ubuntu repository ...Include Specific TOR project PPA instead
 
-Use this page for ppa of your project: https://www.torproject.org/docs/debian.html.en#ubuntu
+Use this page for selecting system specific PPA : [ubuntu PPA's](https://www.torproject.org/docs/debian.html.en#ubuntu)
 
 example (UTOPIC UNICORN)
 
