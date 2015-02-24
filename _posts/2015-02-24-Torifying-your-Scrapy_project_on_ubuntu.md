@@ -12,7 +12,7 @@ excerpt: This article contains the detailed walk-through of how to use TOR Relay
 ---
 
 <div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+  Howdy! Thisasdasda is an example blog post that shows several types of HTML content supported in this theme.
 </div>
 
 <strong> So without any due let's dive in </strong>
@@ -59,6 +59,13 @@ $ apt-get install tor deb.torproject.org-keyring
 ### FOR POLIPO:
 
 {% highlight bash %}
-    sudo apt-get install polipo  # install from default ubuntu base repository
+#install from default ubuntu base repository
+sudo apt-get install polipo
 {% endhighlight %}
+
+### Second configure POLIPO to talk with TOR instead of acting as a stand alone proxy
+
+edit using vim : /etc/polipo/config
+
+and add following line of code to instruct polipo to talk with TOR using SOCK connection
 
