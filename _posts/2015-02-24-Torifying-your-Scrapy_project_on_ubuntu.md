@@ -85,52 +85,50 @@ so far we have configured our TOR and POLIPO to communicate with each other...
 ### **Now comes the main part where you want to change the setting in your SCRAPY project to use this polipo/tor setup**
 
 1. add following code in your settings.py file
-{% highlight bash %}
-#More comprehensive list can be found at
-#http://techpatterns.com/forums/about304.html
-USER_AGENT_LIST = [
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.36 Safari/535.7',
-    'Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:16.0) Gecko/16.0 Firefox/16.0',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10',
-    ]
+    {% highlight bash %}
+    #More comprehensive list can be found at
+    #http://techpatterns.com/forums/about304.html
+    USER_AGENT_LIST = [
+        'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.36 Safari/535.7',
+        'Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:16.0) Gecko/16.0 Firefox/16.0',
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10',
+        ]
 
-HTTP_PROXY = 'http://127.0.0.1:8123'
+    HTTP_PROXY = 'http://127.0.0.1:8123'
 
-DOWNLOADER_MIDDLEWARES = {
-    'myspider.middlewares.RandomUserAgentMiddleware': 400,
-    'myspider.middlewares.ProxyMiddleware': 410,
-    'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
-}
-{% endhighlight %}
-
+    DOWNLOADER_MIDDLEWARES = {
+        'myspider.middlewares.RandomUserAgentMiddleware': 400,
+        'myspider.middlewares.ProxyMiddleware': 410,
+        'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
+    }
+    {% endhighlight %}
 2. Create a middlewares.py file in your project root directory and following line of code
-{% highlight bash %}
-import random
-from scrapy.conf import settings
-from scrapy import log
+    {% highlight bash %}
+    import random
+    from scrapy.conf import settings
+    from scrapy import log
 
 
-class RandomUserAgentMiddleware(object):
-    def process_request(self, request, spider):
-        ua = random.choice(settings.get('USER_AGENT_LIST'))
-        if ua:
-            request.headers.setdefault('User-Agent', ua)
-            #this is just to check which user agent is being used for request
-            spider.log(
-                u'User-Agent: {} {}'.format(request.headers.get('User-Agent'), request),
-                level=log.DEBUG
-            )
+    class RandomUserAgentMiddleware(object):
+        def process_request(self, request, spider):
+            ua = random.choice(settings.get('USER_AGENT_LIST'))
+            if ua:
+                request.headers.setdefault('User-Agent', ua)
+                #this is just to check which user agent is being used for request
+                spider.log(
+                    u'User-Agent: {} {}'.format(request.headers.get('User-Agent'), request),
+                    level=log.DEBUG
+                )
 
 
-class ProxyMiddleware(object):
-    def process_request(self, request, spider):
-        request.meta['proxy'] = settings.get('HTTP_PROXY')
+    class ProxyMiddleware(object):
+        def process_request(self, request, spider):
+            request.meta['proxy'] = settings.get('HTTP_PROXY')
 
-{% endhighlight %}
+    {% endhighlight %}
+3. now you are all set to run your scrapy spider using Proxy(tor + polipo and random user-agent)
 
-3. now you are all set to run your scrapy spider using Proxy(tor+ polipo and random user-agent)
-
-Happy Scraping ,use your bot responsibly , follow robot.txt rules strictly ..and avoid banning your , use proper download delay ( as per scrapy recommendation more than 2)..
+Happy Scraping ,use your bot responsibly , follow robot.txt rules strictly ..and avoid banning your spider self, use proper download delay ( as per scrapy recommendation more than 2)..
 
 * **references:**
 
@@ -139,8 +137,8 @@ http://doc.scrapy.org/en/latest/topics/architecture.html
 http://pkmishra.github.io/blog/2013/03/18/how-to-run-scrapy-with-TOR-and-multiple-browser-agents-part-1-mac/
 
 
-### useful commands:
-
+**useful commands:**
+{% highlight bash %}
 sudo service polipo start/stop/restart
 sudo service tor start/stop/restart
 
@@ -149,3 +147,4 @@ and then use all different commands to view and check the request and reponse
 
 request.meta ,response.meta = and check the proxy being used
 view(response) - to view downloaded response body in browser
+{% endhighlight %}
