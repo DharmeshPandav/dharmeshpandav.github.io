@@ -75,3 +75,10 @@ socksProxyType = socks5
 diskCacheRoot = ""
 {% endhighlight %}
 
+so far we have configured our TOR and POLIPO to communicate with each other...
+
+* just to test if our tor is working or not...
+
+1. Go to Firefox and change your proxy setting for socks to localhost:9050 remove all other http and other proxy and visit this site http://check.torproject.org/
+2. If everything is setup correctly , you should see a message that this browser is configured properly to use tor network
+
