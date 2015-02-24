@@ -36,7 +36,7 @@ Use this page for ppa of your project: https://www.torproject.org/docs/debian.ht
 
 example (UTOPIC UNICORN)
 
-``` bash
+```bash
 
 add this two line in package list file : /etc/apt/sources.list
 
