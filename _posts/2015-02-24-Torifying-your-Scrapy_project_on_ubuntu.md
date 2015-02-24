@@ -57,10 +57,10 @@ $ apt-get install tor deb.torproject.org-keyring
 
 ### **FOR POLIPO:**
 
-{% highlight bash %}
+```bash
 #install from default ubuntu base repository
 sudo apt-get install polipo
-{% endhighlight %}
+```
 
 #### **Second configure POLIPO to talk with TOR instead of acting as a stand alone proxy**
 
@@ -68,11 +68,11 @@ edit using vim : /etc/polipo/config
 
 and add following line of code to instruct polipo to talk with TOR using SOCK connection
 
-{% highlight bash %}
+```bash
 socksParentProxy = "localhost:9050"
 socksProxyType = socks5
 diskCacheRoot = ""
-{% endhighlight %}
+```
 
 so far we have configured our TOR and POLIPO to communicate with each other...
 
@@ -84,7 +84,7 @@ so far we have configured our TOR and POLIPO to communicate with each other...
 ### **Now comes the main part where you want to change the setting in your SCRAPY project to use this polipo/tor setup**
 
 * ***add following code in your settings.py file***
-    {% highlight bash %}
+    ```bash
     #More comprehensive list can be found at
     #http://techpatterns.com/forums/about304.html
     USER_AGENT_LIST = [
@@ -100,9 +100,9 @@ so far we have configured our TOR and POLIPO to communicate with each other...
         'myspider.middlewares.ProxyMiddleware': 410,
         'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
     }
-    {% endhighlight %}
+    ```
 * ***Create a middlewares.py file in your project root directory and following line of code***
-    {% highlight bash %}
+    ```bash
     import random
     from scrapy.conf import settings
     from scrapy import log
@@ -124,7 +124,7 @@ so far we have configured our TOR and POLIPO to communicate with each other...
         def process_request(self, request, spider):
             request.meta['proxy'] = settings.get('HTTP_PROXY')
 
-    {% endhighlight %}
+    ```
 
 * ***now you are all set to run your scrapy spider using Proxy(tor + polipo and random user-agent)***
 
@@ -138,7 +138,7 @@ Happy Scraping ,use your bot responsibly , follow robot.txt rules strictly ..and
 
 
 **useful commands:**
-{% highlight bash %}
+```bash
 sudo service polipo start/stop/restart
 sudo service tor start/stop/restart
 
@@ -147,7 +147,7 @@ and then use all different commands to view and check the request and reponse
 
 request.meta ,response.meta = and check the proxy being used
 view(response) - to view downloaded response body in browser
-{% endhighlight %}
+```
 
 <div class="message">
   Author of this article does not encourage IP infringement in any-form whatsoever...and Author is not responsible for any consequence of using methods ,mentioned above
