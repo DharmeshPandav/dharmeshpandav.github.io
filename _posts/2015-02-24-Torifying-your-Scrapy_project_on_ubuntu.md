@@ -55,7 +55,6 @@ $ apt-get install tor deb.torproject.org-keyring
 
 {% endhighlight %}
 
-
 ### **FOR POLIPO:**
 
 {% highlight bash %}
