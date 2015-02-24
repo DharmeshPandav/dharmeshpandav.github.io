@@ -147,10 +147,14 @@ sudo service polipo start/stop/restart
 sudo service tor start/stop/restart
 
 scrapy shell --spider=spidername URL
-and then use all different commands to view and check the request and reponse
+#and then use all different commands to view and check the request and reponse
 
-request.meta ,response.meta = and check the proxy being used
-view(response) - to view downloaded response body in browser
+#check the proxy being used by firing this two command
+request.meta
+response.meta
+
+#to view downloaded response body in browser
+view(response)
 ```
 
 <div class="message">
