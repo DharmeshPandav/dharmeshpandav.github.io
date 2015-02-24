@@ -55,7 +55,7 @@ $ apt-get install tor deb.torproject.org-keyring
 
 ```
 
-### FOR POLIPO:
+### **FOR POLIPO:**
 
 {% highlight bash %}
 #install from default ubuntu base repository
