@@ -84,7 +84,7 @@ so far we have configured our TOR and POLIPO to communicate with each other...
 
 ### **Now comes the main part where you want to change the setting in your SCRAPY project to use this polipo/tor setup**
 
-1. add following code in your settings.py file
+* ***add following code in your settings.py file***
     {% highlight bash %}
     #More comprehensive list can be found at
     #http://techpatterns.com/forums/about304.html
@@ -102,7 +102,7 @@ so far we have configured our TOR and POLIPO to communicate with each other...
         'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
     }
     {% endhighlight %}
-2. Create a middlewares.py file in your project root directory and following line of code
+* ***Create a middlewares.py file in your project root directory and following line of code***
     {% highlight bash %}
     import random
     from scrapy.conf import settings
@@ -126,15 +126,16 @@ so far we have configured our TOR and POLIPO to communicate with each other...
             request.meta['proxy'] = settings.get('HTTP_PROXY')
 
     {% endhighlight %}
-3. now you are all set to run your scrapy spider using Proxy(tor + polipo and random user-agent)
+
+* ***now you are all set to run your scrapy spider using Proxy(tor + polipo and random user-agent)***
 
 Happy Scraping ,use your bot responsibly , follow robot.txt rules strictly ..and avoid banning your spider self, use proper download delay ( as per scrapy recommendation more than 2)..
 
 * **references:**
 
-http://ubuntuguide.org/wiki/Tor
-http://doc.scrapy.org/en/latest/topics/architecture.html
-http://pkmishra.github.io/blog/2013/03/18/how-to-run-scrapy-with-TOR-and-multiple-browser-agents-part-1-mac/
+>http://ubuntuguide.org/wiki/Tor
+>http://doc.scrapy.org/en/latest/topics/architecture.html
+>http://pkmishra.github.io/blog/2013/03/18/how-to-run-scrapy-with-TOR-and-multiple-browser-agents-part-1-mac/
 
 
 **useful commands:**
