@@ -12,7 +12,7 @@ excerpt: This article contains the detailed walk-through of how to use TOR Relay
 ---
 
 <div class="message">
-  Howdy! Thisasdasda is an example blog post that shows several types of HTML content supported in this theme.
+  Howdy! This articles covers the step-by-step guide for implementing http proxy middleware to use TOR relay in scrapy project..
 </div>
 
 <strong> So without any due let's dive in </strong>
@@ -149,3 +149,10 @@ and then use all different commands to view and check the request and reponse
 request.meta ,response.meta = and check the proxy being used
 view(response) - to view downloaded response body in browser
 {% endhighlight %}
+
+<div class="message">
+  Author of this article does not encourage IP infringement in any-form whatsoever...and Author is not responsible for any consequence of using methods ,mentioned above
+  this article is only for those who want to implement http middleware feature of Scrapy Framework..
+  Respect others IP , scrap only if it is allowed to..respect ROBOT.txt rules strictly...with that being said...
+  Happy Scrapping :D
+</div>
