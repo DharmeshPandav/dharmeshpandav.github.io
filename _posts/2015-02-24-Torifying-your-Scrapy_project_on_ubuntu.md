@@ -56,16 +56,22 @@ $ apt-get install tor deb.torproject.org-keyring
 {% endhighlight %}
 
 
-### FOR POLIPO:
+### ***FOR POLIPO:***
 
 {% highlight bash %}
 #install from default ubuntu base repository
 sudo apt-get install polipo
 {% endhighlight %}
 
-### Second configure POLIPO to talk with TOR instead of acting as a stand alone proxy
+#### **Second configure POLIPO to talk with TOR instead of acting as a stand alone proxy**
 
 edit using vim : /etc/polipo/config
 
 and add following line of code to instruct polipo to talk with TOR using SOCK connection
+
+{% highlight bash %}
+socksParentProxy = "localhost:9050"
+socksProxyType = socks5
+diskCacheRoot = ""
+{% endhighlight %}
 
