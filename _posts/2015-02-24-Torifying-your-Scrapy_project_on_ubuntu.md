@@ -26,7 +26,7 @@ will explain the technical part later in this article, for now read the statemen
 
 ### **Installing TOR and POLIPO:**
 
-### FOR TOR:
+### **FOR TOR:**
 
 use this link for installation of TOR for your distro : https://www.torproject.org/docs/documentation.html.en
 
@@ -36,7 +36,7 @@ Use this page for ppa of your project: https://www.torproject.org/docs/debian.ht
 
 example (UTOPIC UNICORN)
 
-{% highlight bash %}
+``` bash
 
 add this two line in package list file : /etc/apt/sources.list
 
@@ -53,7 +53,7 @@ gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
 $ apt-get update
 $ apt-get install tor deb.torproject.org-keyring
 
-{% endhighlight %}
+```
 
 ### FOR POLIPO:
 
