@@ -133,9 +133,9 @@ Happy Scraping ,use your bot responsibly , follow robot.txt rules strictly ..and
 
 * **references:**
 
->http://ubuntuguide.org/wiki/Tor
->http://doc.scrapy.org/en/latest/topics/architecture.html
->http://pkmishra.github.io/blog/2013/03/18/how-to-run-scrapy-with-TOR-and-multiple-browser-agents-part-1-mac/
+>1. http://ubuntuguide.org/wiki/Tor
+>2. http://doc.scrapy.org/en/latest/topics/architecture.html
+>3. http://pkmishra.github.io/blog/2013/03/18/how-to-run-scrapy-with-TOR-and-multiple-browser-agents-part-1-mac/
 
 
 **useful commands:**
