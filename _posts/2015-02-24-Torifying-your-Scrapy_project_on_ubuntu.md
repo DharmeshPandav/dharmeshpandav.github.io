@@ -103,3 +103,49 @@ DOWNLOADER_MIDDLEWARES = {
 }
 {% endhighlight %}
 
+2. Create a middlewares.py file in your project root directory and following line of code
+{% highlight bash %}
+import random
+from scrapy.conf import settings
+from scrapy import log
+
+
+class RandomUserAgentMiddleware(object):
+    def process_request(self, request, spider):
+        ua = random.choice(settings.get('USER_AGENT_LIST'))
+        if ua:
+            request.headers.setdefault('User-Agent', ua)
+            #this is just to check which user agent is being used for request
+            spider.log(
+                u'User-Agent: {} {}'.format(request.headers.get('User-Agent'), request),
+                level=log.DEBUG
+            )
+
+
+class ProxyMiddleware(object):
+    def process_request(self, request, spider):
+        request.meta['proxy'] = settings.get('HTTP_PROXY')
+
+{% endhighlight %}
+
+3. now you are all set to run your scrapy spider using Proxy(tor+ polipo and random user-agent)
+
+Happy Scraping ,use your bot responsibly , follow robot.txt rules strictly ..and avoid banning your , use proper download delay ( as per scrapy recommendation more than 2)..
+
+* **references:**
+
+http://ubuntuguide.org/wiki/Tor
+http://doc.scrapy.org/en/latest/topics/architecture.html
+http://pkmishra.github.io/blog/2013/03/18/how-to-run-scrapy-with-TOR-and-multiple-browser-agents-part-1-mac/
+
+
+### useful commands:
+
+sudo service polipo start/stop/restart
+sudo service tor start/stop/restart
+
+scrapy shell --spider=spidername URL
+and then use all different commands to view and check the request and reponse
+
+request.meta ,response.meta = and check the proxy being used
+view(response) - to view downloaded response body in browser
