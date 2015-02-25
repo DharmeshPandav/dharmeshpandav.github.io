@@ -39,30 +39,6 @@
         {% endif %}
     </div>
     <div id="contact-list" style="text-align:center">
-        {% if site.author.goodreads %}
-        <a href="https://goodreads.com/{{ site.author.goodreads }}">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square-o fa-stack-2x"></i>
-          <i class="fa fa-book fa-stack-1x"></i>
-        </span>
-        </a>
-        {% endif %}
-        {% if site.author.email %}
-        <a href="mailto:{{ site.author.email }}">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square-o fa-stack-2x"></i>
-          <i class="fa fa-envelope fa-stack-1x"></i>
-        </span>
-        </a>
-        {% endif %}
-        <a href="{{ site.BASE_PATH }}/atom.xml">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-        <i class="fa fa-rss fa-stack-1x"></i>
-      </span>
-        </a>
-    </div>
-    <div id="contact-list" style="text-align:center">
         {% if site.author.elance %}
         <a href="{{ site.author.elance }}">
         <span class="fa-stack fa-lg">
@@ -88,6 +64,31 @@
         </a>
         {% endif %}
     </div>
+    <div id="contact-list" style="text-align:center">
+        {% if site.author.goodreads %}
+        <a href="https://goodreads.com/{{ site.author.goodreads }}">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-book fa-stack-1x"></i>
+        </span>
+        </a>
+        {% endif %}
+        {% if site.author.email %}
+        <a href="mailto:{{ site.author.email }}">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x"></i>
+        </span>
+        </a>
+        {% endif %}
+        <a href="{{ site.BASE_PATH }}/atom.xml">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-rss fa-stack-1x"></i>
+      </span>
+        </a>
+    </div>
+
 
   <div class="sidebar-item">
     <p>{{ site.description }}</p>
