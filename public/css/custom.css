@@ -102,13 +102,6 @@
     background: url(/assets/top_move.png) no-repeat right top;
 }
 
-.sidebar_fixed{
-    top:40px;
-    float: left;
-    margin-left: 40px;
-    position: fixed;
-}
-
 .frame-video{
     width: 90%;
     height:300px;
@@ -124,6 +117,13 @@
     position: fixed;
     right: 40px;
     top:20px;
+    color: #75b5aa !important;
+}
+
+.absolute-right{
+    position: fixed;
+    right: 40px;
+    top:40px;
     color: #75b5aa !important;
 }
 
