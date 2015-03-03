@@ -102,6 +102,11 @@
     background: url(/assets/top_move.png) no-repeat right top;
 }
 
+.sidebar_fixed{
+    top:40px;
+    float: right;
+    position: fixed;
+}
 
 .frame-video{
     width: 90%;
