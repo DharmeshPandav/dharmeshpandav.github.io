@@ -104,7 +104,8 @@
 
 .sidebar_fixed{
     top:40px;
-    float: right;
+    float: left;
+    margin-left: 40px;
     position: fixed;
 }
 
