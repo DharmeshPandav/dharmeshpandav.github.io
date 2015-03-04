@@ -577,9 +577,9 @@ a.pagination-item:hover {
   color: #2DCCA2;
 }
 
-.theme-base-02 .wrap{
-  background-color: #d5d5d5;
-}
+/*.theme-base-02 .wrap{*/
+  /*background-color: #d5d5d5;*/
+/*}*/
 .theme-base-02 a.tag-list:hover , a.tag-list:checked{
   background-color: rgba(45, 204, 162, 100);
   color: black;
