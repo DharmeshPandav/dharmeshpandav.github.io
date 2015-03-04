@@ -84,7 +84,7 @@ a.tag-list{
 
 a.tag-list:hover , a.tag-list:checked{
     background-color: rgba(45, 204, 162, 100);
-    colur: black;
+    color: black;
 }
 
 .tag-list{
