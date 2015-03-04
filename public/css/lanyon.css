@@ -571,6 +571,11 @@ a.pagination-item:hover {
 .theme-base-02 .sidebar-toggle,
 .theme-base-02 .related-posts li a:hover {
     color:#2DCCA2;
+    text-decoration: none;
+}
+
+.theme-base-02 .container a:hover{
+  color: #f5f5f5;
 }
 
 .theme-base-02 .post .post-title{
