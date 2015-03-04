@@ -40,9 +40,11 @@ title: TOR
 
 {% for tag in site.tags %}
 {% if tag[0] != page.title %}
-<div class="tag-list">
-    <a class="firm" href="/tags/{{ tag[0] }}">{{ tag[0] }}</a>
-    <span class="tag-icon-prefix"></span>
-</div>
+<a class="firm tag-list" href="/tags/{{ tag[0] }}">
+    <div>
+        {{ tag[0] }}
+        <span class="tag-icon-prefix"></span>
+    </div>
+</a>
 {% endif %}
 {% endfor %}

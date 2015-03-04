@@ -79,11 +79,12 @@
 
 a.tag-list{
     text-decoration: none;
+    background-color: #f5f5f5;
 }
 
-a.tag-list:hover , a.tag-list:enabled , a.tag-list:checked{
-    background-color: rgba(45, 204, 162, .800);
-    column-rule: white;
+a.tag-list:hover , a.tag-list:checked{
+    background-color: rgba(45, 204, 162, 100);
+    colur: black;
 }
 
 .tag-list{
