@@ -1,13 +1,22 @@
 ---
 layout: page
-title: Tags
+title: Tag Cloud
 ---
 
 
-    {% for tag in site.tags %}
+    <!-- {% for tag in site.tags %}
     <div class="tag-list">
         <a class="firm" href="/tags/{{ tag[0] }}">{{ tag[0] }}</a>
         <span class="tag-icon-prefix"></span>
     </div>
+    {% endfor %} -->
+	
+	{% for tag in site.tags %}
+    <a class="firm class="tag-list"" href="/tags/{{ tag[0] }}">
+		<div>
+			{{ tag[0] }}
+			<span class="tag-icon-prefix"></span>
+		</div>
+	</a>
     {% endfor %}
 
