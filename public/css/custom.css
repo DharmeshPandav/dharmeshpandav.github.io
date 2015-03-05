@@ -149,11 +149,7 @@ a.tag-list{
 
 @keyframes fly-in-from-left {
     from {
-        -webkit-transform:translateY(15rem) rotate(15deg);
-           -moz-transform:translateY(15rem) rotate(15deg);
-            -ms-transform:translateY(15rem) rotate(15deg);
-             -o-transform:translateY(15rem) rotate(15deg);
-                transform:translateY(15rem) rotate(15deg);
+        transform:translateY(15rem) rotate(15deg);
         opacity:0;
     }
 }
@@ -161,54 +157,34 @@ a.tag-list{
 @-webkit-keyframes fly-in-from-left {
     from {
         -webkit-transform:translateY(15rem) rotate(15deg);
-           -moz-transform:translateY(15rem) rotate(15deg);
-            -ms-transform:translateY(15rem) rotate(15deg);
-             -o-transform:translateY(15rem) rotate(15deg);
-                transform:translateY(15rem) rotate(15deg);
         opacity:0;
     }
 }
 
 @-moz-keyframes fly-in-from-left {
     from {
-        -webkit-transform:translateY(15rem) rotate(15deg);
-           -moz-transform:translateY(15rem) rotate(15deg);
-            -ms-transform:translateY(15rem) rotate(15deg);
-             -o-transform:translateY(15rem) rotate(15deg);
-                transform:translateY(15rem) rotate(15deg);
+        -moz-transform:translateY(15rem) rotate(15deg);
         opacity:0;
     }
 }
 
 @-ms-keyframes fly-in-from-left {
     from {
-        -webkit-transform:translateY(15rem) rotate(15deg);
-           -moz-transform:translateY(15rem) rotate(15deg);
-            -ms-transform:translateY(15rem) rotate(15deg);
-             -o-transform:translateY(15rem) rotate(15deg);
-                transform:translateY(15rem) rotate(15deg);
+        -ms-transform:translateY(15rem) rotate(15deg);
         opacity:0;
     }
 }
 
 @-o-keyframes fly-in-from-left {
     from {
-        -webkit-transform:translateY(15rem) rotate(15deg);
-           -moz-transform:translateY(15rem) rotate(15deg);
-            -ms-transform:translateY(15rem) rotate(15deg);
-             -o-transform:translateY(15rem) rotate(15deg);
-                transform:translateY(15rem) rotate(15deg);
+        -o-transform:translateY(15rem) rotate(15deg);
         opacity:0;
     }
 }
 
 @keyframes fly-in-from-right {
     from {
-        -webkit-transform:translateY(15rem) rotate(-15deg);
-           -moz-transform:translateY(15rem) rotate(-15deg);
-            -ms-transform:translateY(15rem) rotate(-15deg);
-             -o-transform:translateY(15rem) rotate(-15deg);
-                transform:translateY(15rem) rotate(-15deg);
+        transform:translateY(15rem) rotate(-15deg);
         opacity:0;
     }
 }
@@ -216,40 +192,24 @@ a.tag-list{
 @-webkit-keyframes fly-in-from-right {
     from {
         -webkit-transform:translateY(15rem) rotate(-15deg);
-           -moz-transform:translateY(15rem) rotate(-15deg);
-            -ms-transform:translateY(15rem) rotate(-15deg);
-             -o-transform:translateY(15rem) rotate(-15deg);
-                transform:translateY(15rem) rotate(-15deg);
         opacity:0;
     }
 }
 @-moz-keyframes fly-in-from-right {
     from {
-        -webkit-transform:translateY(15rem) rotate(-15deg);
-           -moz-transform:translateY(15rem) rotate(-15deg);
-            -ms-transform:translateY(15rem) rotate(-15deg);
-             -o-transform:translateY(15rem) rotate(-15deg);
-                transform:translateY(15rem) rotate(-15deg);
+        -moz-transform:translateY(15rem) rotate(-15deg);
         opacity:0;
     }
 }
 @-ms-keyframes fly-in-from-right {
     from {
-        -webkit-transform:translateY(15rem) rotate(-15deg);
-           -moz-transform:translateY(15rem) rotate(-15deg);
-            -ms-transform:translateY(15rem) rotate(-15deg);
-             -o-transform:translateY(15rem) rotate(-15deg);
-                transform:translateY(15rem) rotate(-15deg);
+        -ms-transform:translateY(15rem) rotate(-15deg);
         opacity:0;
     }
 }
 @-o-keyframes fly-in-from-right {
     from {
-        -webkit-transform:translateY(15rem) rotate(-15deg);
-           -moz-transform:translateY(15rem) rotate(-15deg);
-            -ms-transform:translateY(15rem) rotate(-15deg);
-             -o-transform:translateY(15rem) rotate(-15deg);
-                transform:translateY(15rem) rotate(-15deg);
+        -o-transform:translateY(15rem) rotate(-15deg);
         opacity:0;
     }
 }
