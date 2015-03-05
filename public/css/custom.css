@@ -128,6 +128,10 @@ a.tag-list{
             transform-origin: top left;
 }
 
+.card-background-none{
+    background: none;
+}
+
 .card:nth-child(even){
     -webkit-animation-name:fly-in-from-right;
        -moz-animation-name:fly-in-from-right;
