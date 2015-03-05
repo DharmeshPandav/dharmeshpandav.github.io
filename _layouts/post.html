@@ -3,7 +3,7 @@ layout: default
 comments:   true
 ---
 
-<div class="post">
+<div class="post card">
     <!--<h1 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>-->
     <h1 class="post-title">{{ page.title }}</h1>
     <span class="post-date">
@@ -49,7 +49,7 @@ comments:   true
 </div>
 <!--temp code blank add -->
 
-<div class="related">
+<div class="related card">
   <h3 class="inline-title-post">Related Posts</h3>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}

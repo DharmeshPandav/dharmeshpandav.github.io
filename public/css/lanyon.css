@@ -581,6 +581,10 @@ a.pagination-item:hover {
     text-decoration: none;
 }
 
+.theme-base-02 strong {
+    color: #AD4747;
+}
+
 /*.theme-base-02 .container a:hover{*/
   /*color: #f5f5f5;*/
 /*}*/
