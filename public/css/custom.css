@@ -43,11 +43,12 @@
 }
 
 .inline-title {
-    margin-top: 4rem;
+    /*margin-top: 4rem;*/
     margin-bottom: 1rem;
     font-family: cursive;
     font-style: italic;
     font-weight: bold;
+    color:rgb(173, 71, 71);
 
 }
 
