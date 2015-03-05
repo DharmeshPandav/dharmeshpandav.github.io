@@ -10,13 +10,14 @@ title: Tag Cloud
         <span class="tag-icon-prefix"></span>
     </div>
     {% endfor %} -->
-	
-	{% for tag in site.tags %}
-    <a class="firm tag-list" href="/tags/{{ tag[0] }}">
-		<div>
-			{{ tag[0] }}
-			<span class="tag-icon-prefix"></span>
-		</div>
-	</a>
-    {% endfor %}
+	<div class="card">
+        {% for tag in site.tags %}
+        <a class="firm tag-list" href="/tags/{{ tag[0] }}">
+            <div>
+                {{ tag[0] }}
+                <span class="tag-icon-prefix"></span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
 
