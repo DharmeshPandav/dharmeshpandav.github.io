@@ -188,6 +188,11 @@ pre code {
   margin-bottom: 0;
 }
 
+/* Make code block overflow */
+.highlight pre {
+  display: inline-block;
+}
+
 /* Gist via GitHub Pages */
 .gist .gist-file {
   font-family: Menlo, Monaco, "Courier New", monospace !important;
