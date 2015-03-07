@@ -105,7 +105,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 * ***Create a middlewares.py file in your project root directory and add following line of code***
 
-```bash
+```bash linenos
 import random
 from scrapy.conf import settings
 from scrapy import log
