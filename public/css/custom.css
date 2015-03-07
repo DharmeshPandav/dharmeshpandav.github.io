@@ -99,6 +99,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 320px;
+    margin-bottom: 2rem;
+}
+
+.card li{
+    color: gray;
 }
 a.tag-list{
     text-decoration: none;
