@@ -580,7 +580,12 @@ a.pagination-item:hover {
     color:#2DCCA2;
     text-decoration: none;
 }
-
+.theme-base-02 h1,
+.theme-base-02 h2,
+.theme-base-02 h3,
+.theme-base-02 h4,
+.theme-base-02 h5,
+.theme-base-02 h6,
 .theme-base-02 strong {
     color: #AD4747;
 }
