@@ -67,8 +67,9 @@
     line-height: 3em;
     margin-right: 4px;
     margin-left: 4px;
-    background-size: contain !important;
-    background: no-repeat 50% !important;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
 }
 
 .tag-icon:before{
@@ -86,7 +87,7 @@
 }
 
 .tag1-icon{
-    background:url(/assets/Tag_1_38x38.png) left top;
+    background: url(/assets/Tag_1_38x38.png) no-repeat left top;
 }
 
 a.tag-list{
