@@ -105,18 +105,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 * ***Create a middlewares.py file in your project root directory and add following line of code***
 
-{% highlight js %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-{% endhighlight %}
-
-{% highlight bash linenos %}
+```bash
 import random
 from scrapy.conf import settings
 from scrapy import log
@@ -138,10 +127,21 @@ class ProxyMiddleware(object):
     def process_request(self, request, spider):
         request.meta['proxy'] = settings.get('HTTP_PROXY')
 
-{% endhighlight %}
+```
 
 
 * ***now you are all set to run your scrapy spider using Proxy(tor + polipo and random user-agent)***
+
+{% highlight js %}
+// Example can be run directly in your JavaScript console
+
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
+
+// Call the function
+adder(2, 6);
+// > 8
+{% endhighlight %}
 
 Happy Scraping ,use your bot responsibly , follow robot.txt rules strictly ..and avoid banning your spider self, use proper download delay ( as per scrapy recommendation more than 2)..
 
