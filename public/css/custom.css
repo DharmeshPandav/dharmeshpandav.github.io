@@ -92,11 +92,13 @@
 
 .page-title{
     display: inline;
+
 }
 .aling-center
 {
     margin-left: auto;
     margin-right: auto;
+    width: 320px;
 }
 a.tag-list{
     text-decoration: none;
