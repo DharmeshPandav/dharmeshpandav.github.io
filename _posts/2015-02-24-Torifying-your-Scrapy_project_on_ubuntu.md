@@ -76,7 +76,7 @@ diskCacheRoot = ""
 
 so far we have configured our TOR and POLIPO to communicate with each other...
 
-* **just to test if our tor/polipo setting is working or not...
+* ***just to test if our tor/polipo setting is working or not...***
 
 1. Go to Firefox and change your proxy setting for http proxy to localhost:8123 remove all other scoks and other proxy and visit this site [Check TOR](http://check.torproject.org/)
 2. If everything is setup correctly , you should see a message that this browser is configured properly to use tor network
