@@ -60,6 +60,22 @@
     color:#AD4747;
 }
 
+.tag-icon{
+    position: relative;
+    display: inline-block;
+    width: 3.3333333333333333em;
+    line-height: 3em;
+    margin-right: 4px;
+    margin-left: 4px;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.tag-icon:before{
+    content: "\00a0";
+}
+
 .tag-icon-prefix {
     background:url(/assets/tag28x28.png) left top;
     width:28px;
@@ -70,14 +86,8 @@
 
 }
 
-.tag1-icon-prefix {
+.tag1-icon{
     background:url(/assets/Tag_1_38x38.png) left top;
-    width:38px;
-    height:38px;
-    display: block;
-    float: left;
-    margin-right: 5px;
-    margin-top: 10px;
 }
 
 a.tag-list{
