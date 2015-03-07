@@ -3,7 +3,7 @@ layout: page
 title: Archive
 ---
 
-<ul class="related-posts card">
+<ul class="related-posts card card-background-none">
 
 {% for post in site.posts %}
 
