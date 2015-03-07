@@ -127,7 +127,7 @@ class ProxyMiddleware(object):
     def process_request(self, request, spider):
         request.meta['proxy'] = settings.get('HTTP_PROXY')
 
-
+{% endhighlight %}
 
 
 * ***now you are all set to run your scrapy spider using Proxy(tor + polipo and random user-agent)***
