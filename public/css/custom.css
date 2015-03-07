@@ -93,7 +93,11 @@
 .page-title{
     display: inline;
 }
-
+.aling-center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
 a.tag-list{
     text-decoration: none;
     background-color: #f5f5f5;
