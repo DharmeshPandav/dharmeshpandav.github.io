@@ -67,9 +67,8 @@
     line-height: 3em;
     margin-right: 4px;
     margin-left: 4px;
-    background-size: contain;
-    background-position: 50%;
-    background-repeat: no-repeat;
+    background-size: contain !important;
+    background: no-repeat 50% !important;
 }
 
 .tag-icon:before{
