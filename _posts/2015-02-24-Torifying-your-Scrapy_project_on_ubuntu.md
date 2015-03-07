@@ -20,7 +20,7 @@ excerpt: This article contains the detailed walk-through of how to use TOR Relay
 ### **First Install TOR(port 9050) relay and Polipo(port 8123) proxy** ..
 will explain the technical part later in this article, for now read the statement as english only !
 
-**Reason:** Scrapy does not support SOCK Proxy(only http proxy) but in order to use TOR exit , one must transfer traffic via SOCK Proxy.. As a Solution ,Install Polipo proxy (default 8123 port)..which listens as a HTTP Proxy and can forward/receive traffic to/from SOCKS proxy ( for us  to-and-from TOR relay)
+**Reason:** `Scrapy` does not support SOCK Proxy(only http proxy) but in order to use TOR exit , one must transfer traffic via SOCK Proxy.. As a Solution ,Install Polipo proxy (default 8123 port)..which listens as a HTTP Proxy and can forward/receive traffic to/from SOCKS proxy ( for us  to-and-from TOR relay)
 
 
 
@@ -129,19 +129,7 @@ class ProxyMiddleware(object):
 
 ```
 
-
 * ***now you are all set to run your scrapy spider using Proxy(tor + polipo and random user-agent)***
-
-{% highlight js %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-{% endhighlight %}
 
 Happy Scraping ,use your bot responsibly , follow robot.txt rules strictly ..and avoid banning your spider self, use proper download delay ( as per scrapy recommendation more than 2)..
 
