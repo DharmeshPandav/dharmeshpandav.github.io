@@ -277,10 +277,13 @@ tbody tr:nth-child(odd) th {
   /*color: #717171;*/
   /*background-color: #f9f9f9;*/
     padding:1.5rem;
-    box-shadow:0 2px 5px #1d4f4f;
-    background: none;
+    box-shadow:0 5px 35px #1d4f4f;
+    background: #0A1D1D;
     color: #f5f5f5;
-    margin: 1rem 1rem;
+    margin-top: 1 rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
     border-radius:3px;
 }
 
