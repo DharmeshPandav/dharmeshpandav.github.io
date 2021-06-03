@@ -10,7 +10,7 @@ permalink:        pretty
 title:            pSeudo Thoughts
 tagline:          "Writing 'em down to help other"
 description:      'A silly attempt to mirror my thoughts on blog from so called brain'
-url:              http://blog.privatenode.in
+url:              https://dharmeshpandav.github.io
 baseurl:          '/'
 paginate:         5
 #excerpt_separator: <!--more-->
